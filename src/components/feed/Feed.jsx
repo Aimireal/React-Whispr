@@ -1,10 +1,16 @@
+import { Share } from '@material-ui/icons'
+import Post from '../posts/Posts'
+import { Posts } from "../../dummyData";
 import './feed.css'
 
 export default function Feed() {
     return(
         <div className="feed">
             <div className="feedWrapper">
-                <h1>Feed Posts</h1>
+                <Share/>
+                {Posts.map((p) => (
+                    <Post key={p.id} post={p} />
+                ))}
             </div>
         </div>
     )
