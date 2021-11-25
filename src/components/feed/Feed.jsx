@@ -1,4 +1,4 @@
-import { Share } from '@material-ui/icons'
+import Share from '../share/Share';
 import Post from '../posts/Posts'
 import { Posts } from "../../dummyData";
 import './feed.css'

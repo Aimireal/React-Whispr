@@ -35,7 +35,7 @@ export default function Sidebar() {
                     <button className="sidebarButton">Show More</button>
                     <hr className="sidebarHr"/>
                     <ul className="sidebarFriendList">
-                        <h1>ToDo: Add Friend List</h1>
+                        
                     </ul>
                 </ul>
             </div>

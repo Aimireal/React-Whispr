@@ -1,9 +1,9 @@
 import { MoreVert } from "@material-ui/icons";
 import "./posts.css";
-import { Users, Posts } from "../../dummyData";
+import { Users } from "../../dummyData";
 import { useState } from "react";
 
-export default function Posts({ posts}) {
+export default function Posts({ posts }) {
     const [like, setLike] = useState(posts.like)
     const [isLiked, setIsLiked] = useState(false)
 
