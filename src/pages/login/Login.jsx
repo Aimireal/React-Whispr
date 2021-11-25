@@ -1,14 +1,28 @@
 
 import "./login.css";
-import Navbar from "../../components/navbar/Navbar";
-import Sidebar from "../../components/sidebar/Sidebar";
-import Feed from "../../components/feed/Feed";
-import Rightbar from "../../components/rightbar/Rightbar";
 
 export default function Login() {
     return (
-        <>
-            <Navbar/>
-        </>
+        <div className="login">
+            <div className="loginWrapper">
+            <div className="loginLeft">
+                <h3 className="loginLogo">Whispr</h3>
+                <span className="loginDesc">
+                    Connect with friends and the world around you on Whispr.
+                </span>
+            </div>
+            <div className="loginRight">
+                <div className="loginBox">
+                <input placeholder="Email" className="loginInput" />
+                <input placeholder="Password" className="loginInput" />
+                <button className="loginButton">Log In</button>
+                <span className="loginForgot">Forgot Password?</span>
+                <button className="loginRegisterButton">
+                    Create a New Account
+                </button>
+                </div>
+            </div>
+            </div>
+        </div>
     )
 }
