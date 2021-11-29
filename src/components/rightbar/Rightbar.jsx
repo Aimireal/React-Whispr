@@ -1,4 +1,6 @@
 import './rightbar.css'
+import { Users } from "../../dummyData";
+import Online from "../online/Online";
 
 export default function Rightbar({ profile }) {
     const HomeRightbar = () => {
@@ -13,11 +15,13 @@ export default function Rightbar({ profile }) {
             <img className="rightbarAd" src="assets/ad.png" alt="" />
             <h4 className="rightbarTitle">Online Friends</h4>
             <ul className="rightbarFriendList">
-                <h1>Temp users</h1>
+                {Users.map((u) => (
+                    <Online key={u.id} user={u} />
+                ))}
             </ul>
         </>
-        );
-    };
+        )
+    }
 
     const ProfileRightbar = () => {
         return (
@@ -53,7 +57,7 @@ export default function Rightbar({ profile }) {
                         alt=""
                         className="rightbarFollowingImg"
                     />
-                    <span className="rightbarFollowingName">John Smith</span>
+                    <span className="rightbarFollowingName">Jane Smith</span>
                 </div>
                 <div className="rightbarFollowing">
                     <img
@@ -61,7 +65,7 @@ export default function Rightbar({ profile }) {
                         alt=""
                         className="rightbarFollowingImg"
                     />
-                    <span className="rightbarFollowingName">John Smith</span>
+                    <span className="rightbarFollowingName">Jack Smith</span>
                 </div>
                 <div className="rightbarFollowing">
                     <img
@@ -69,11 +73,12 @@ export default function Rightbar({ profile }) {
                         alt=""
                         className="rightbarFollowingImg"
                     />
+                    <span className="rightbarFollowingName">June Smith</span>
                 </div>
             </div>
         </>
-        );
-    };
+        )
+    }
     return (
         <div className="rightbar">
             <div className="rightbarWrapper">

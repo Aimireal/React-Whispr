@@ -1,5 +1,5 @@
 import Share from '../share/Share';
-import Post from '../posts/Posts'
+import Post from '../post/Post'
 import { Posts } from "../../dummyData";
 import './feed.css'
 
@@ -12,6 +12,6 @@ export default function Feed() {
                     <Post key={p.id} post={p} />
                 ))}
             </div>
-        </div>
+        </div> 
     )
 }

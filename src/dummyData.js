@@ -29,12 +29,16 @@ export const Users = [
       profilePicture: "assets/person/6.jpeg",
       username: "Jerry Walker",
     },
+    {
+      id:7,
+      profilePicture: "assets/person/6.jpeg",
+      username: "Jilan Judson",
+    },
   ]
   
   export const Posts = [
     {
       id: 1,
-      desc: "Love For All, Hatred For None.",
       photo: "assets/post/1.jpeg",
       date: "5 mins ago",
       userId: 1,
@@ -43,6 +47,7 @@ export const Users = [
     },
     {
       id: 2,
+      desc: "Turmkey",
       photo: "assets/post/2.jpeg",
       date: "15 mins ago",
       userId: 2,
@@ -51,7 +56,7 @@ export const Users = [
     },
     {
       id: 3,
-      desc: "Every moment is a fresh beginning.",
+      desc: "Grammies recipe",
       photo: "assets/post/3.jpeg",
       date: "1 hour ago",
       userId: 3,
@@ -76,6 +81,7 @@ export const Users = [
     },
     {
       id: 6,
+      desc: "This image goes hard",
       photo: "assets/post/6.jpeg",
       date: "1 day ago",
       userId: 3,
@@ -84,7 +90,7 @@ export const Users = [
     },
     {
       id: 7,
-      desc: "Never regret anything that made you smile.",
+      desc: "My daughter is beautiful",
       photo: "assets/post/7.jpeg",
       date: "2 days ago",
       userId: 6,
@@ -101,7 +107,6 @@ export const Users = [
     },
     {
       id: 9,
-      desc: "Change the world by being yourself.",
       photo: "assets/post/9.jpeg",
       date: "5 days ago",
       userId: 2,
