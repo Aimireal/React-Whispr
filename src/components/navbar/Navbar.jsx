@@ -1,5 +1,6 @@
 import './navbar.css'
 import { Search, Person, Chat, Notifications } from '@material-ui/icons'
+import ThemeToggle from '../ThemeToggle'
 
 export default function Navbar() {
     return (
@@ -36,6 +37,7 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
+            <ThemeToggle />
         </div>
     )
 }
