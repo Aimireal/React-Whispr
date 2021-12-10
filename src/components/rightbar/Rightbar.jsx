@@ -7,12 +7,10 @@ export default function Rightbar({ profile }) {
         return (
         <>
             <div className="birthdayContainer">
-            <img className="birthdayImg" src="gift.png" alt="" />
             <span className="birthdayText">
                 <b>Dylan</b> and <b>3 other friends</b> have a birhday today.
             </span>
             </div>
-            <img className="rightbarAd" src="ad.png" alt="" />
             <h4 className="rightbarTitle">Online Friends</h4>
             <ul className="rightbarFriendList">
                 {Users.map((u) => (

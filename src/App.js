@@ -10,9 +10,9 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Redirect,
+  //Redirect,
 } from "react-router-dom"
-import { useContext } from "react"
+//import { useContext } from "react"
 
 
 function App() {
