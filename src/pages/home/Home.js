@@ -4,15 +4,17 @@ import Feed from "../../components/feed/Feed";
 import Rightbar from "../../components/rightbar/Rightbar";
 import "./home.css"
 
-export default function Home() {
-  return (
-    <>
-        <Navbar />
+const Home = () => {
+    return (
+        <>
+            <Navbar />
             <div className="homeContainer">
                 <Sidebar />
-                <Feed/>
-                <Rightbar/>
+                <Feed />
+                <Rightbar />
             </div>
         </>
     )
 }
+
+export default Home;
