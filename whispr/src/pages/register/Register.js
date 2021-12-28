@@ -45,6 +45,7 @@ const Register = () => {
                         <input placeholder="Email" required className="loginInput" ref={email} type="email" />
                         <input placeholder="Password" required className="loginInput" ref={password} type="password" minLength="6" />
                         <input placeholder="Password Again" required className="loginInput" ref={passwordAgain} type="password" />
+                        <div className="center"></div>
                         <button className="loginButton" type="submit">Sign Up</button>
                         <Link to="/login">
                             <button className="loginRegisterButton">Log into Account</button>

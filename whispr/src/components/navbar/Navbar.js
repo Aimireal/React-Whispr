@@ -1,9 +1,9 @@
 import './navbar.css'
 import { Search, Person, Chat, Notifications } from '@material-ui/icons'
-import ThemeToggle from '../ThemeToggle'
 import { Link } from 'react-router-dom'
 import { useContext } from "react"
 import { AuthContext } from "../../context/AuthContext"
+import ThemeToggle from '../ThemeToggle';
 
 const Navbar = () => {
     const { user } = useContext(AuthContext)
@@ -19,13 +19,13 @@ const Navbar = () => {
             <div className="navbarCenter">
                 <div className="searchbar">
                     <Search className="searchIcon" />
-                    <input placeholder="Search for friend,post or video" className="searchInput" />
+                    <input placeholder="Search for anything" className="searchInput" />
                 </div>
             </div>
             <div className="navbarRight">
                 <div className="navbarLinks">
-                    <span className="navbarLink">Home</span>
                     <span className="navbarLink">Timeline</span>
+                    <span className="navbarLink">Messenger</span>
                 </div>
                 <div className="navbarIcons">
                     <div className="navbarIconItem">
@@ -45,7 +45,8 @@ const Navbar = () => {
                 <img src={user.profilePicture ? PF + user.profilePicture : PF + "person/noAvatar.png"} alt="" className="navbarImg" />
                 </Link>
             </div>
-            <ThemeToggle />
+            <ThemeToggle/>
+            <br/>
         </div>
     )
 }

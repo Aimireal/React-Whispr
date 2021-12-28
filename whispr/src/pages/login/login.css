@@ -1,7 +1,7 @@
 .login {
   width: 100vw;
   height: 100vh;
-  background-color: #f0f2f5;
+  background-color: #232323;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +21,7 @@
 .loginLogo {
   font-size: 50px;
   font-weight: 800;
-  color: #1775ee;
+  color: #927fbf;
   margin-bottom: 10px;
 }
 .loginDesc {
@@ -30,7 +30,7 @@
 .loginBox {
   height: 300px;
   padding: 20px;
-  background-color: white;
+  background-color: #232323;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -48,9 +48,11 @@
 }
 .loginButton {
   height: 50px;
+  width: 60%;
+  align-self: center;
   border-radius: 10px;
   border: none;
-  background-color: #1755ee;
+  background-color: #927fbf;
   color: white;
   font-size: 20px;
   font-weight: 500;
@@ -64,12 +66,12 @@
 }
 .loginForgot {
   text-align: center;
-  color: #1755ee;
+  color: #927fbf;
 }
 .loginRegisterButton {
+  height: 50px;
   width: 60%;
   align-self: center;
-  height: 50px;
   border-radius: 10px;
   border: none;
   background-color: #42b72a;
@@ -77,4 +79,5 @@
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+  margin-left: 90px;
 }

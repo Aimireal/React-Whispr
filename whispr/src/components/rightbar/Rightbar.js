@@ -52,7 +52,7 @@ const Rightbar = ({ user }) => {
             <>
                 <div className="birthdayContainer">
                     <img src="assets/gift.png" className="birthdayImg" alt="" />
-                    <span className="birthdayText"><b>Ivan Ivanov</b> and <b>3 others friends</b> have a birthday today</span>
+                    <span className="birthdayText"><b>Jeremy Jones</b> has a birthday today</span>
                 </div>
                 <img src="assets/ad.png" alt="" className="rightBarAd" />
                 <h4 className="rightbarTitle">Online Friends</h4>
